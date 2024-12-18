@@ -1,0 +1,42 @@
+/* spaceInvaders.css */
+.game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    background-color: #000;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+.game-canvas {
+    display: block;
+    background-color: #000;
+}
+
+.scoreboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    z-index: 1;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+.game-over button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}

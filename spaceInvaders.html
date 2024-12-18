@@ -1,0 +1,16 @@
+<!-- spaceInvaders.html -->
+<template>
+    <div class="game-container">
+        <canvas lwc:dom="manual" class="game-canvas" width="800" height="600"></canvas>
+        <div class="scoreboard">
+            <span>Score: {score}</span>
+            <span>Lives: {lives}</span>
+        </div>
+        <template if:true={gameOver}>
+            <div class="game-over">
+                <h1>Game Over</h1>
+                <button onclick={restartGame}>Restart</button>
+            </div>
+        </template>
+    </div>
+</template>
